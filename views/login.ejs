@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   ,<style>
     /* Reset some default styles */
 * {
     margin: 0;
@@ -14,7 +14,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: aqua;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .login-container {
-    background-color:brown;
+    background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -77,19 +77,22 @@ input[type="password"]:focus {
     background-color: #0056b3;
 }
 
-  </style>
+   </style>
 </head>
 <body>
-  <h1>Login</h1>
-  <form action="/login" method="POST">
-    <label for="username">Username:</label><br>
-    <input type="text" name="username" id="username" required>
-    <br>
-    <label for="password">Password:</label><br>
-    <input type="password" name="password" id="password" required>
-    <br>
-    <button type="submit">Login</button>
-  </form>
-  <p>Don't have an account? <a href="/signup">Sign up</a></p>
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
 </body>
 </html>
